@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link width="200" rel="icon" href="./images/pngimg.com - porsche_logo_PNG7.png" />
+    <title>Porsche</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            
+        }
+
+        marquee{
+            border-radius: 3%;
+        }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 5;
+        }
+
+        nav ul {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+        }
+
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            font-size: large;
+            font-stretch: expanded;
+        }
+
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin-top: 60px;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .spacing {
+            margin-bottom: 50px;
+            /* Adjust the value as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <center><img src="./images/porsche text.png"></center>
+    <header>
+        <h1 style="font-style:italic;">Welcome to Porsche</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#knowmore">Know more</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <video class="video-bg" autoplay muted loop>
+            <source src="./roller(1).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div>
+            <marquee onmouseover="javascript:stop()" onmouseout="javascript:start()" scrollamount="10" loop="-1"
+                style="border: solid;" behaviour="solid" direction="right">
+                <a href="https://www.porsche.com/international/models/macan/macan-models/macan/" target="_blank"><img
+                        height="200" width="600" src="./macan.avif" /></a>
+                <a href="https://configurator.porsche.com/en-WW/model/992142" target="_blank"><img height="170"
+                        width="600" src="./911.avif" /></a>
+                <a href="https://www.porsche.com/international/models/911/911-dakar/911-dakar/" target="_blank"><img
+                        height="150" width="500" src="./images/718.png" /></a>
+            </marquee>
+        </div>
+
+        <section id="cars">
+            <div>
+                <center><img style="border-radius: 10%;" src="./images/taycantext.png"></center>
+                <img style="border-radius: 10%;" height="350" width="580"
+                    src="./images/1-Porsche-Taycan-review-2024.webp">
+                <p style="display: inline-block; max-width: 400px; text-align: left; margin-inline-start: 200px;">The
+                    Porsche Taycan is a groundbreaking electric vehicle that represents the future of automotive
+                    performance and
+                    innovation. As Porsche's first all-electric sports car, the Taycan combines the brand's legendary
+                    engineering prowess
+                    with cutting-edge electric technology. It offers blistering acceleration, with some models capable
+                    of going from 0 to 60
+                    mph in under 3 seconds, while maintaining the luxurious and precise driving experience Porsche is
+                    known for. The Taycan
+                    features a sleek, aerodynamic design and a high-tech interior, providing both comfort and advanced
+                    connectivity. Its
+                    impressive range and fast-charging capabilities make it a practical choice for everyday use,
+                    redefining what it means to
+                    drive a sports car in the modern era.</p><br />
+                <a style="margin: 200px; font-style: italic;" href="order.html" target="_blank">Purchase
+                    now</a><br /><br /><br /><br /><br /><br />
+            </div>
+
+            <div>
+                <center><img src="./images/panemeratext.png"></center>
+            </div>
+            <img style="border-radius: 10%;" height="350" width="540" src="./images/2024-porsche-panamera-e-hybrid.jpg">
+            <p style="display: inline-block; max-width: 400px; text-align: left; margin-inline-start: 200px;">The
+                Porsche Panamera is a luxury sedan that seamlessly blends high-performance capabilities with the comfort
+                and
+                practicality of a four-door car. Combining Porsche's iconic sporty design with advanced engineering, the
+                Panamera offers
+                powerful engine options, including hybrid variants, ensuring an exhilarating driving experience. Its
+                sophisticated
+                interior features top-of-the-line materials and cutting-edge technology, providing both driver and
+                passengers with a
+                premium environment. Whether on a long-distance journey or a quick city drive, the Panamera delivers
+                unparalleled
+                performance, making it a standout choice for those seeking a versatile yet thrilling luxury vehicle.</p>
+            <br />
+            <a style="margin: 200px; font-style: italic;" href="order.html" target="_blank">Purchase now</a>
+        </section>
+    </div>
+
+    <div class="spacing"></div> <!-- Added space between content and footer -->
+
+    <section id="knowmore">
+        <!-- Existing footer in refference.html -->
+        <footer>
+            <ul style="display: flex; justify-content: center; margin: 0 10px;">
+                <a style="color: #fff;" href="./contactus.html">
+                    <li style="display: flex; justify-content: center; margin: 0 10px;">Contact us</li>
+                </a>
+                <a style="color: #fff;" href="./aboutus.html">
+                    <li style="display: flex; justify-content: center; margin: 0 10px;">About us</li>
+                </a>
+                <a style="color: #fff;" href="./faq.html">
+                    <li style="display: flex; justify-content: center; margin: 0 10px;">FAQs</li>
+                </a>
+            </ul>
+        </footer>
+    </section>
+</body>
+
+</html>
